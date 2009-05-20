@@ -17,7 +17,7 @@ Insert the following into your HTML tab when editing content to get a list of ch
 
 &lt;ul&gt;
 &lt;!--list_children()--&gt;
-&lt;/ul&lt;
+&lt;/ul&gt;
 
 == Installation ==
 
@@ -33,3 +33,8 @@ Yes. Simply add a "false" between the parentheses:
 <code>&lt;!--list_siblings(false)--&gt;</code>
 
 This tells the plugin to NOT exclude the current page when listing siblings.
+
+== Screenshots ==
+
+1. Entering your HTML comments.
+2. The dynamic output.
