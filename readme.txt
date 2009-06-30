@@ -1,7 +1,7 @@
 === List Children ===
 Contributors: theandystratton
-Donate link: http://theandystratton.com
-Tags: 
+Donate link: http://theandystratton.com/donate
+Tags: permalinks, list pages, nagivation, subnavigation
 Requires at least: 2.6
 Tested up to: 2.7.1
 Stable tag: trunk
