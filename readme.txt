@@ -3,7 +3,7 @@ Contributors: theandystratton
 Donate link: http://theandystratton.com/donate
 Tags: permalinks, list pages, nagivation, subnavigation
 Requires at least: 2.6
-Tested up to: 3.2.3
+Tested up to: 3.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Stable tag: trunk
@@ -15,7 +15,19 @@ Use an HTML comment to list links of the current page's children or siblings.
 
 Common usage is for content sites utilizing WordPress as a simple CMS. Some content hierarchies call for an Overview page followed by multiple subpages, for example, a Services page.
 
-Insert the following into your HTML tab when editing content to get a list of child pages:
+Use the following shortcodes to list children and or siblings of the current page:
+
+Alphabetical listing of current page's children:
+
+[list_children sort_column="page_title" sort_order="asc"]
+
+List of current page's siblings, ordered by menu order (descending):
+
+[list_siblings sort_column="menu_order" sort_order="desc"]
+
+You can use a majority of the attributes from the wp_list_pages() call: http://codex.wordpress.org/Function_Reference/wp_list_pages
+
+*The following will work for now but is deprecated:*
 
 &lt;ul&gt;
 &lt;!--list_children()--&gt;
@@ -30,13 +42,6 @@ Insert the following into your HTML tab when editing content to get a list of ch
 
 = Can I include the current page in the list_siblings() call? =
 
-Yes. Simply add a "false" between the parentheses:
+Of course, use the following:
 
-<code>&lt;!--list_siblings(false)--&gt;</code>
-
-This tells the plugin to NOT exclude the current page when listing siblings.
-
-== Screenshots ==
-
-1. Entering your HTML comments.
-2. The dynamic output.
+<code>[list_siblings exclude_me="false"]</code>
