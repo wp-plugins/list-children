@@ -3,7 +3,7 @@
 Plugin Name: List Children
 Author: theandystratton
 Author URI: http://theandystratton.com
-Version: 1.1
+Version: 1.2
 Description: Use a shortcode to list all child or sibling pages of the current page displayed. You can use an HTML comment (<code>&lt;!--list_children()--&gt;</code> or <code>&lt;!--list_siblings()--&gt;</code>) but it's deprecated – only remains for backwards compatibility.
 */
 
