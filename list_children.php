@@ -93,7 +93,6 @@ function lc_list_siblings( $sort_column = 'menu_order', $sort_order = 'ASC', $ex
 }
 
 function lc_list_pages_content( $content ) {
-	echo 'I ran';
 	$comment = '<!--list_children()-->';
 	$content = str_replace( $comment, lc_list_children(), $content);
 	$comment = '<!--list_siblings()-->';
